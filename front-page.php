@@ -3,7 +3,9 @@
     while(have_posts()) {
         the_post(); ?>
         <section class="acquaintance">
-            <h1 class="acquaintance__name">My name will be here with JS</h1>
+            <div class="typing">
+                <h1 class="acquaintance__name">I glad to see you here!</h1>
+            </div>
             <p class="acquaintance__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -12,8 +14,8 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit 
                 anim id est laborum.</p>
-            <div class="botton__standrt">    
-                <button class="btn__standart">About me</button>
+            <div class="button__standart">    
+                <button class="btn__standart">More about me</button>
                 <button class="btn__standart">Go to the Portfolio</button>
             </div>
         </section>

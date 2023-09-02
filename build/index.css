@@ -130,4 +130,56 @@ html, body {
     fill: #6c757d;
 }
 
-/* SLIDER*/
+.acquaintance {
+  margin: 4em 6em 2em 8em;
+  padding: 0 6em;
+}
+.typing {
+  display: grid;
+  place-items: flex-start;
+}
+
+.acquaintance__name {
+  width: 16ch;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.acquaintance__text {
+  padding-top: 1em;
+}
+
+.button__standart {
+  padding-top: 1em;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.btn__standart {
+  padding: 10px 10px;
+  margin-left: 30px;
+  border-radius: 3px;
+  background-color: #212529;
+  color: #dee2e6;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn__standart:hover {
+  background-color: #6c757d;
+}
+
+
