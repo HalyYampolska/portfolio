@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html, body { 
+    font-family: 'Chakra Petch', sans-serif;
+    color: #212529;
+    font-size: 100%;
+    background-color: #e9ecef;
+
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+.header {
+    background-color:#212529;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-gap: 5em;
+    padding: 10px;
+    align-items: center;
+
+    margin-top: -2em;
+}
+
+.header a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.header__name-menu {
+    font-size: 21px;
+    padding-left: 2em;
+    display: inline-block;
+}
+
+.header__menu {
+    display: inline-block;
+}
+.header__menu a {
+    transition: color 0.3s;
+}
+.header__menu a:hover {
+    text-decoration: underline;
+    color: #495057;
+}
+
+.header__menu ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.header__menu li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2em;
+}
+
+/* FOOTER */
+.footer {
+    background-color:#dee2e6;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 5em;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.footer__name-menu {
+    font-size: 16px;
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+}
+.footer__name-menu svg {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+}
+.footer__menu a {
+    transition: color 0.3s;
+}
+.footer__menu a:hover {
+    text-decoration: underline;
+    color: #6c757d;
+}
+
+.footer__menu ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.footer__menu li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2em;
+}
+
+.footer__menu svg {
+    fill: #212529;
+}
+
+.footer__icon {
+    text-align: center;
+}
+
+.footer__icon svg {
+    padding: 0 2em;
+    fill: #212529;
+}
+
+.footer__icon svg:hover, :active {
+    fill: #6c757d;
+}
+
+
