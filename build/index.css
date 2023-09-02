@@ -33,12 +33,13 @@ html, body {
 
 .header__name-menu {
     font-size: 21px;
-    padding-left: 2em;
+    padding-left: 10em;
     display: inline-block;
 }
 
 .header__menu {
     display: inline-block;
+    margin-right: 10em;
 }
 .header__menu a {
     transition: color 0.3s;
@@ -78,7 +79,7 @@ html, body {
 
 .footer__name-menu {
     font-size: 16px;
-    padding-left: 2em;
+    padding-left: 12em;
     display: flex;
     align-items: center;
 }
@@ -90,6 +91,7 @@ html, body {
 .footer__menu {
     display: flex;
     align-items: center;
+    margin-right: 10em;
 }
 .footer__menu a {
     transition: color 0.3s;
@@ -128,4 +130,4 @@ html, body {
     fill: #6c757d;
 }
 
-
+/* SLIDER*/

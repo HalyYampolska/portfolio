@@ -32,7 +32,33 @@
             </div>
         </section>
 
-    
+        <section class="projects">
+            <h2 class="projects__name">My Recent Projects</h2>
+            <div class="project">
+                <h3 class="project__name">Project 1</h3>
+                <p class="project__type">Type: <a href="#">Website</a></p>
+                <p class="project__stack">Stack: <a href="#">HTML, CSS & SCSS, JavaScript, iQuery, npm, PHP, WordPress</a></p>
+                <p class="project__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                    anim id est laborum.
+                </p>
+                <button class="btn__project">See More</button>
+            </div>
+        </section>
+
+        <section class="invite">
+            <h2 class="invite__name">Let's chat!</h2>
+            <div class="invite__button">
+                <button class="btn__invite">Download CV</button>
+                <button class="btn__invite">Get in Touch</button>
+            </div>
+        </section>
         
 
 <?php }
