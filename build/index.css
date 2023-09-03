@@ -24,6 +24,7 @@ html, body {
     align-items: center;
 
     margin-top: -2em;
+    margin-bottom: 5em;
 }
 
 .header a {
@@ -131,7 +132,7 @@ html, body {
 }
 
 .acquaintance {
-  margin: 4em 6em 2em 8em;
+  margin: 0 6em 5em 8em;
   padding: 0 6em;
 }
 .typing {
@@ -145,6 +146,7 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+  font-size: 36px;
 }
 
 @keyframes typing {
@@ -157,6 +159,22 @@ html, body {
   50% {
     border-color: transparent
   }
+}
+
+/* HERO */ 
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2em;
+  justify-items: center;
+}
+
+.hero__img {
+  width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .acquaintance__text {
@@ -183,3 +201,127 @@ html, body {
 }
 
 
+/* SKILLS*/
+
+.skills {
+  margin: 0 6em 4em 8em;
+  padding: 0 6em;
+}
+
+.skill {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-around;
+}
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-evenly;
+}
+
+.row-1 li, 
+.row-2 li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.skill__list .row-1 li a,
+.skill__list .row-2 li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #6C757D;
+  border: 2px solid #6C757D;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.row-2 {
+  margin-top: 1em;
+}
+
+/* PROJECT */
+.projects {
+  margin: 0 6em 5em 8em;
+  padding: 0 6em;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.projects__name {
+  margin: 0 6em 1em 9em;
+  padding: 0 6px;
+}
+
+.project__photo{
+  width: 100%;
+  height: -webkit-fill-available;
+  
+}
+
+.project {
+  padding: 20px;
+  display: grid;
+  border: 2px solid #6C757D;
+}
+
+.project__name,
+.project__type, 
+.project__stack, 
+.project__text {
+  padding-top: 10px;
+} 
+
+.btn__project {
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #494057;
+  font-family: 'Chakra Petch', sans-serif;
+
+  justify-self: end;
+}
+
+.btn__project:hover {
+  background-color: #212529;
+  color: #dee2e6;
+}
+
+/* INVITE */ 
+.invite {
+  margin: 0 6em 4em 8em;
+  padding: 0 6em;
+
+  text-align: center;
+}
+
+.invite__buttons {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.btn__invite {
+  width: 150px;
+  margin: 3em;
+
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #494057;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn__invite:hover {
+  background-color: #212529;
+  color: #dee2e6;
+}
