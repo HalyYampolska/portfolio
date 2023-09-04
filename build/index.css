@@ -196,8 +196,20 @@ html, body {
   font-family: 'Chakra Petch', sans-serif;
 }
 
+.btn__standart a {
+  text-decoration: none;
+  background-color: #212529;
+  color: #dee2e6;
+}
+
 .btn__standart:hover {
-  background-color: #6c757d;
+  background-color: #dee2e6;
+  color: #212529;
+}
+
+.btn__standart a:hover {
+  background-color: #dee2e6;
+  color: #212529;
 }
 
 
@@ -271,7 +283,7 @@ html, body {
 .project {
   padding: 20px;
   display: grid;
-  border: 2px solid #6C757D;
+  border: 1px solid #6C757D;
 }
 
 .project__name,
@@ -323,5 +335,73 @@ html, body {
 
 .btn__invite:hover {
   background-color: #212529;
+  color: #dee2e6;
+}
+
+/* ABOUT */
+.about__heading {
+  font-size: 60px;
+  padding: 0 3.5em;
+}
+
+.about__content {
+  margin: 2em 10em 4em 10em;
+  padding: 0 2em 0 3.5em;
+}
+
+.about__content p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.is-style-fill {
+  margin: 2em;
+  border-radius: 3px;
+  background-color: #212529;
+  color: #dee2e6;
+  font-family: 'Chakra Petch', sans-serif;
+  transition: background-color 0.3s;
+
+}
+
+.is-style-fill:hover {
+  background-color: #dee2e6;
+  color: #212529;
+}
+
+.about-list li {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.skills-list li {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.about-links a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.contact-send {
+  margin-top: 1em;
+}
+
+.about-block {
+  margin-top: 2em;
+}
+
+.about-photo {
+  margin-top: 8em;
+  margin-left: 5em;
+}
+
+.btn__invite a{
+  text-decoration: none;
+  color: #212529;
+}
+
+.btn__invite a:hover {
   color: #dee2e6;
 }

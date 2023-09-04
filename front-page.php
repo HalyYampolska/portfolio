@@ -20,7 +20,7 @@
             
             </div>
             <div class="button__standart">    
-                <button class="btn__standart">More about me</button>
+                <button class="btn__standart"><a href="<?php echo site_url('/about'); ?>">More about me</a></button>
                 <button class="btn__standart">Go to the Portfolio</button>
             </div>
         </section>
@@ -103,8 +103,8 @@
         <section class="invite">
             <h2 class="invite__name">Let's chat!</h2>
             <div class="invite__buttons">
-                <button class="btn__invite">Download CV</button>
-                <button class="btn__invite">Get in Touch</button>
+                <button class="btn__invite"><a href="<?php echo esc_url( get_template_directory_uri() ); ?>/downloads/Halyna-Yampolska.pdf" download>Download CV</a></button>
+                <button class="btn__invite"><a href="<?php echo site_url('/contact'); ?>">Get in Touch</a></button>
             </div>
         </section>
         

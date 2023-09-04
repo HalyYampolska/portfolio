@@ -2,9 +2,12 @@
 
     while(have_posts()) {
         the_post(); ?>
-        <h1>This is a about and contact pages</h1>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-<?php }
+        
+        <h1 class="about__heading"><?php the_title(); ?></h1>
+        <div class="about__content"><?php the_content(); ?></div>
+        
+    <?php }
+
 
     get_footer();
 ?>
