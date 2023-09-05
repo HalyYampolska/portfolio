@@ -2,6 +2,8 @@
 
     while(have_posts()) {
         the_post(); ?>
+        <div class="container">
+
         <section class="acquaintance">
             
             <div class="hero">
@@ -107,7 +109,7 @@
                 <button class="btn__invite"><a href="<?php echo site_url('/contact'); ?>">Get in Touch</a></button>
             </div>
         </section>
-        
+        </div>
 
 <?php }
 

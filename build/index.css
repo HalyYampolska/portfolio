@@ -18,13 +18,12 @@ html, body {
 .header {
     background-color:#212529;
     display: grid;
-    grid-template-columns: 1fr max-content;
-    grid-gap: 5em;
-    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15em;
     align-items: center;
-
     margin-top: -2em;
     margin-bottom: 5em;
+    
 }
 
 .header a {
@@ -34,13 +33,12 @@ html, body {
 
 .header__name-menu {
     font-size: 21px;
-    padding-left: 10em;
-    display: inline-block;
+    
 }
 
 .header__menu {
-    display: inline-block;
-    margin-right: 10em;
+  display: flex;
+  justify-content: flex-end;
 }
 .header__menu a {
     transition: color 0.3s;
@@ -67,7 +65,6 @@ html, body {
     background-color:#dee2e6;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    grid-gap: 5em;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
@@ -80,7 +77,7 @@ html, body {
 
 .footer__name-menu {
     font-size: 16px;
-    padding-left: 12em;
+    padding-left: 14em;
     display: flex;
     align-items: center;
 }
@@ -92,7 +89,7 @@ html, body {
 .footer__menu {
     display: flex;
     align-items: center;
-    margin-right: 10em;
+    margin-right: 12em;
 }
 .footer__menu a {
     transition: color 0.3s;
@@ -131,10 +128,6 @@ html, body {
     fill: #6c757d;
 }
 
-.acquaintance {
-  margin: 0 6em 5em 8em;
-  padding: 0 6em;
-}
 .typing {
   display: grid;
   place-items: flex-start;
@@ -179,12 +172,14 @@ html, body {
 
 .acquaintance__text {
   padding-top: 1em;
+  padding-right: 6em;
 }
 
 .button__standart {
   padding-top: 1em;
   display: flex;
   justify-content: flex-end; 
+  margin-right: 6em;
 
 }
 
@@ -212,13 +207,18 @@ html, body {
 /* SKILLS*/
 
 .skills {
-  margin: 0 6em 4em 8em;
   padding: 0 6em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .skill {
   text-align: center;
   margin-top: 2em;
+}
+
+.skill__name {
+  padding-left: 5px;
 }
 
 .row-1 {
@@ -255,8 +255,8 @@ html, body {
 
 /* PROJECT */
 .projects {
-  margin: 0 6em 5em 8em;
-  padding: 0 6em;
+  margin: 0 6em 4em 6em;
+  
 }
 
 .projects {
@@ -266,8 +266,8 @@ html, body {
 }
 
 .projects__name {
-  margin: 0 6em 1em 9em;
-  padding: 0 6px;
+  margin-left: 4em;
+  margin-bottom: 2em;
 }
 
 .project__photo{
@@ -277,7 +277,7 @@ html, body {
 }
 
 .project {
-  padding: 20px;
+  padding: 30px;
   display: grid;
   border: 1px solid #6C757D;
 }
@@ -289,19 +289,52 @@ html, body {
   padding-top: 10px;
 } 
 
+.project__name {
+  font-size: 36px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.project__type a {
+  color: #495057;
+}
+
+.project__stack a {
+  color: #495057;
+}
+
+.project__stack a:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.project__name a {
+  text-decoration: none;
+  color: #212529;
+}
+
 .btn__project {
   padding: 10px 10px;
   border-radius: 3px;
   background-color: transparent;
   color: #494057;
   font-family: 'Chakra Petch', sans-serif;
-
+  margin-top: 20px;
   justify-self: end;
+}
+
+.btn__project a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .btn__project:hover {
   background-color: #212529;
   color: #dee2e6;
+}
+
+.btn__project a:hover {
+  color: inherit;
 }
 
 /* INVITE */ 
@@ -337,11 +370,11 @@ html, body {
 /* ABOUT */
 .about__heading {
   font-size: 60px;
-  padding: 0 3.5em;
+  padding: 0 4em;
 }
 
 .about__content {
-  margin: 2em 10em 4em 10em;
+  margin: 0 10em 4em 11em;
   padding: 0 2em 0 3.5em;
 }
 
@@ -393,4 +426,16 @@ html, body {
 .about-button:hover {
   background-color: #dee2e6;
   color: #212529;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+
+}
+
+.portfolio__heading {
+  font-size: 60px;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
 }
