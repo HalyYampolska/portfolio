@@ -10,5 +10,6 @@ function portfolio_HY () {
 }
 
 add_action('wp_enqueue_scripts', 'portfolio_HY');
+add_theme_support( 'post-thumbnails' );
 
 ?>
