@@ -1,7 +1,7 @@
 <?php get_header();
 ?>
 
-<div class="container">
+<div class="archive">
 
 <h1 class="portfolio__heading">portfolio.</h1>
 

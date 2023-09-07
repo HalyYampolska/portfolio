@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-        <div class="container">
+        <div class="front-page">
 
         <section class="acquaintance">
             

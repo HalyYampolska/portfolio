@@ -10,6 +10,7 @@
 <body>
     
     <header class="header">
+    
         <div class="header__name-menu"><a href="<?php echo site_url(); ?>">Halyna Yampolska</a></div>
         <div class="header__menu">
             <ul>
@@ -20,6 +21,6 @@
             </ul>
         </div>
     </div>
-
+    
     </header>
-
+    
