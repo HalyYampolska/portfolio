@@ -68,6 +68,8 @@ html, body {
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+
+    margin-top: 5em;
 }
 
 .footer a {
@@ -264,6 +266,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project {
@@ -402,6 +405,7 @@ html, body {
 .about-photo {
   margin-top: 8em;
   margin-left: 5em;
+  
 }
 
 .btn__invite a{
@@ -449,6 +453,8 @@ html, body {
 .project-page__photo {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
 }
 
 .front-page {
@@ -469,4 +475,95 @@ html, body {
   grid-template-columns: 1fr; 
   grid-gap: 1em; 
   margin: 0 15em; 
+}
+
+.project-page__type {
+  font-size: 20px;
+}
+
+.project-page__type a {
+  color: #6C757D;
+  
+}
+
+.project-page__type a:hover {
+  color: #212529;
+  
+}
+
+.project-page__content {
+  font-size: 20px;
+  color: #495057;
+}
+
+.project-page__stack {
+  font-size: 20px;
+}
+
+.project-page__stack a {
+  color: #6C757D;
+}
+
+.project-page__stack a:hover {
+  color: #212529;
+  
+}
+
+.project-page__button {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-page__button button {
+  background-color: #212529;
+  color: #dee2e6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-page__button button:hover {
+  background-color: #495057;
+}
+
+.project-page__button button a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.project-page__button button svg {
+  margin-right: 5px;
+  vertical-align: middle; 
+
+}
+.project-page__content p {
+  padding-top: 10px;
+}
+
+.project-page__content li {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.project-page__content h2 {
+  padding-top: 15px;
+}
+
+.review-heading {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.review-img {
+  padding: 20px 0;
+}
+
+.invite__project {
+  margin-top: 2em;
+  margin-bottom: 0;
 }

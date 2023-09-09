@@ -12,11 +12,11 @@
             the_post(); ?>
 
 <div class="project">
-                <img class="project__photo" src="<?php the_post_thumbnail(); ?>" alt="">
+                <img class="project__photo" src="<?php the_post_thumbnail_url(); ?>" />
                 <h3 class="project__name"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
                 <p class="project__type">Type: <a href="<?php the_permalink(); ?>"><?php echo get_the_category_list(', '); ?></a></p>
                 <p class="project__stack">Stack: <a href="<?php the_permalink(); ?>"><?php echo get_the_tag_list(' ', ', ' ); ?></a></p>
-                <p class="project__text"><?php the_content(); ?></p>
+                <p class="project__text"><?php the_excerpt(); ?></p>
                 <button class="btn__project"><a href="<?php the_permalink(); ?>">See More Details</a></button>
         </div>
 
