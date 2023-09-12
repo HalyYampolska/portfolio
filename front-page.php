@@ -8,14 +8,12 @@
             <img class="hero__img" src="https://images.unsplash.com/photo-1628126907372-761f54441c1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG93bHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
             <div class="typing">
                 <h1 class="acquaintance__name">I glad to see you here!</h1>
-                <p class="acquaintance__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-                anim id est laborum.</p>
+                <p class="acquaintance__text">Highly motivated, with extensive experience working remotely with 
+                    clients of various levels with English, Ukrainian and Russian language skills is seeking an 
+                    opportunity to work in a team-oriented web development company. Five years of experience working 
+                    with WordPress (as a content manager and webmaster) on small projects, excellent knowledge of 
+                    HTML and CSS, familiarity with JavaScript and PHP coupled with a proven ability and passion 
+                    for quickly learning new technologies ensure a quick result.</p>
             </div>
             
             </div>

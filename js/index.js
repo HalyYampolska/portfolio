@@ -7,13 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
             if (index < text.length) {
                 heading.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(type, 100); // Устанавливаем задержку для печати следующей буквы
+                setTimeout(type, 100); 
             }
         }
 
-        type(); // Начинаем эффект печати при загрузке страницы
+        type(); 
 });
-
-
-
-     

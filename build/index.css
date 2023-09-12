@@ -14,16 +14,18 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+
 /* HEADER */
+
 .header {
-    background-color:#212529;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 15em;
-    align-items: center;
-    margin-top: -2em;
-    margin-bottom: 5em;
-    
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 5em;
+  margin-top: -2em;
+  margin-bottom: 5em;
 }
 
 .header a {
@@ -32,32 +34,51 @@ html, body {
 }
 
 .header__name-menu {
-    font-size: 21px;
-    
+  font-size: 21px;
+  color: #f8f9fa;
 }
 
 .header__menu {
   display: flex;
-  justify-content: flex-end;
 }
+
 .header__menu a {
-    transition: color 0.3s;
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .header__menu a:hover {
-    text-decoration: underline;
-    color: #495057;
+  text-decoration: underline;
+  color: #495057;
 }
 
 .header__menu ul {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
     
 }
 
 .header__menu li {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 2em;
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__menu ul {
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .header__menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* FOOTER */
@@ -65,11 +86,18 @@ html, body {
     background-color:#dee2e6;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    padding: 10px;
+    padding: 0 5em;
     align-items: center;
     justify-content: space-between;
 
     margin-top: 5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .footer a {
@@ -79,7 +107,6 @@ html, body {
 
 .footer__name-menu {
     font-size: 16px;
-    padding-left: 14em;
     display: flex;
     align-items: center;
 }
@@ -88,10 +115,24 @@ html, body {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  .footer__name-menu,
+  .footer__name-menu svg {
+    margin: 20px 0;
+  }
+  .footer__name-menu p {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer__name-menu {
+    margin: 0;
+  }
+}
+
 .footer__menu {
     display: flex;
     align-items: center;
-    margin-right: 12em;
 }
 .footer__menu a {
     transition: color 0.3s;
@@ -111,6 +152,18 @@ html, body {
     display: inline-block;
     margin-right: 10px;
     padding: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__menu li {
+    padding: 2em 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__menu li {
+    padding: 20px 0;
+  }
 }
 
 .footer__menu svg {
@@ -144,6 +197,12 @@ html, body {
   font-size: 36px;
 }
 
+@media screen and (max-width: 900px) {
+  .acquaintance__text {
+    margin-top: 10px;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0
@@ -165,11 +224,24 @@ html, body {
   justify-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+}
+
 .hero__img {
   width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .hero__img {
+    display: none;
+  }
 }
 
 .button__standart {
@@ -221,10 +293,25 @@ html, body {
   grid-template-columns: repeat(4, max-content);
   justify-content: space-around;
 }
+
+@media screen and (max-width: 600px) {
+  .row-1 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
 .row-2 {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .row-2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 .row-1 li, 
@@ -256,6 +343,12 @@ html, body {
   text-align: justify;
 
   margin-bottom: 4em;
+}
+
+@media screen and (max-width: 1100px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__name {
@@ -335,9 +428,6 @@ html, body {
 
 /* INVITE */ 
 .invite {
-  margin: 0 6em 4em 8em;
-  padding: 0 6em;
-
   text-align: center;
 }
 
@@ -358,21 +448,27 @@ html, body {
   font-family: 'Chakra Petch', sans-serif;
 }
 
+@media screen and (max-width: 1100px) {
+  .btn__invite {
+    margin: 1em;
+  }
+  
+}
+
 .btn__invite:hover {
   background-color: #212529;
   color: #dee2e6;
 }
 
 /* ABOUT */
-.about__heading {
-  font-size: 60px;
-  padding: 0 4em;
+.about {
+  margin: 0 5em;
 }
 
-.about__content {
-  margin: 0 10em 4em 11em;
-  padding: 0 2em 0 3.5em;
+.about__heading {
+  font-size: 42px;
 }
+
 
 .about__content p {
   margin-top: 20px;
@@ -403,9 +499,25 @@ html, body {
 }
 
 .about-photo {
-  margin-top: 8em;
+  margin-top: 1em;
   margin-left: 5em;
-  
+  width: 25em;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-photo {
+    margin-top: 1em;
+    margin-left: 2em;
+    width: 15em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-photo {
+    margin-top: -3em !important;
+    margin-bottom: 2em;
+    width: 15em;
+  }
 }
 
 .btn__invite a{
@@ -420,16 +532,23 @@ html, body {
   font-family: 'Chakra Petch', sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+  .about-button {
+    font-size: 12px;
+    width: 50% !important;
+  }
+}
+
 .about-button:hover {
   background-color: #dee2e6;
   color: #212529;
 }
-
+/*
 .container {
   width: 1300px;
   margin: 0 auto;
 
-}
+}*/
 
 .portfolio__heading {
   font-size: 60px;
@@ -440,7 +559,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em; 
-  margin: 0 15em; 
+  margin: 0 5em; 
 }
 
 .project-page__heading, 
@@ -461,20 +580,26 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em; 
-  margin: 0 15em;
+  margin: 0 5em;
 }
+@media screen and (max-width: 500px) {
+  .front-page {
+    margin: 0 20px;
+  }
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: 1fr; 
   grid-gap: 1em; 
-  margin: 0 15em; 
+  margin: 0 5em; 
 }
 
 .archive {
   display: grid;
   grid-template-columns: 1fr; 
   grid-gap: 1em; 
-  margin: 0 15em; 
+  margin: 0 5em; 
 }
 
 .project-page__type {
@@ -567,3 +692,4 @@ html, body {
   margin-top: 2em;
   margin-bottom: 0;
 }
+

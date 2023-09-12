@@ -12,8 +12,10 @@
     <header class="header">
     
         <div class="header__name-menu"><a href="<?php echo site_url(); ?>">Halyna Yampolska</a></div>
+    
+    
         <div class="header__menu">
-            <ul>
+            <ul >
                 <li><a href="<?php echo site_url(); ?>">Home</a></li>
                 <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
                 <li><a href="<?php echo site_url('/blog'); ?>">Portfolio</a></li>
@@ -21,6 +23,7 @@
             </ul>
         </div>
     </div>
+    
     
     </header>
     
